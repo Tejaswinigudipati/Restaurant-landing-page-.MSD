@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reserve — Slice of life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">Slice of life</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reserve.html" class="btn">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Book a Table</h2>
+    <form id="reserve-form" class="form-grid">
+      <label>Name <input type="text" id="r-name" required></label>
+      <label>Phone <input type="tel" id="r-phone" required></label>
+      <label>Date <input type="date" id="r-date" required></label>
+      <label>Time <input type="time" id="r-time" required></label>
+      <label>Guests <input type="number" id="r-guests" min="1" max="20" value="2" required></label>
+      <button class="btn" type="submit">Request Reservation</button>
+    </form>
+    <p id="reserve-msg" class="muted"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 Slice of life</div>
+    </div>
+  </footer>
+
+<script>
+document.getElementById('reserve-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('reserve-msg').textContent = 'Thanks! Reservation request received. We will call to confirm.';
+  this.reset();
+});
+</script>
+</body>
+</html>

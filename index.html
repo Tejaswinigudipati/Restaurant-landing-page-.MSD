@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Slice of life — Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Slice of life</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reserve.html" class="btn">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h2>Fresh. Local. Delicious.</h2>
+        <p>Seasonal dishes crafted with love. Book a table or view our menu.</p>
+        <div class="cta">
+          <a href="menu.html" class="btn">View Menu</a>
+          <a href="reserve.html" class="btn ghost">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container card-row">
+      <div class="card">
+        <h3>About Us</h3>
+        <p>Family-owned kitchen using farm-fresh produce and classic techniques.</p>
+      </div>
+      <div class="card">
+        <h3>Hours</h3>
+        <p>Mon–Fri: 11:30–22:00<br/>Sat–Sun: 09:00–23:00</p>
+      </div>
+      <div class="card">
+        <h3>Location</h3>
+        <p>123 Flavor St, Foodville</p>
+      </div>
+    </section>
+
+    <section id="menu-preview" class="container">
+      <h2>Popular Dishes</h2>
+      <div class="grid">
+        <article class="dish">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80" alt="Pasta"></div>
+          <h4>Herb Pasta</h4>
+          <p>Handmade pasta, roasted tomatoes, basil.</p>
+          <div class="price">₹350</div>
+        </article>
+        <article class="dish">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1569058242261-13d2a2d2d6a1?auto=format&fit=crop&w=800&q=80" alt="Salad"></div>
+          <h4>Power Salad</h4>
+          <p>Quinoa, roasted veggies, citrus vinaigrette.</p>
+          <div class="price">₹280</div>
+        </article>
+        <article class="dish">
+          <div class="thumb"><img src="https://images.unsplash.com/photo-1599785209798-9ec0c1d5c3f2?auto=format&fit=crop&w=800&q=80" alt="Cake"></div>
+          <h4>Chocolate Tart</h4>
+          <p>Dark chocolate ganache, flaky crust.</p>
+          <div class="price">₹200</div>
+        </article>
+      </div>
+      <p class="center"><a href="menu.html" class="btn">See Full Menu</a></p>
+    </section>
+
+    <section id="testimonials" class="container">
+      <h2>What People Say</h2>
+      <div class="testimonials">
+        <blockquote>"Amazing flavors and warm service!" — Rina</blockquote>
+        <blockquote>"A perfect spot for date night." — Arjun</blockquote>
+      </div>
+    </section>
+
+    <section id="newsletter" class="container card">
+      <h3>Get Offers</h3>
+      <form id="newsletter-form" class="form-inline">
+        <input type="email" id="email" placeholder="you@example.com" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p id="news-msg" class="muted"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 Slice of life</div>
+      <div class="social">
+        <a href="#">Instagram</a> · <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
